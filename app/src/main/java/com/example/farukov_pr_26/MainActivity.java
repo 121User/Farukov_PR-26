@@ -27,19 +27,66 @@ public class MainActivity extends AppCompatActivity {
         radioButton4 = findViewById(R.id.radioButton4);
     }
     public void Click(View view) {
-        Intent intent = new Intent(MainActivity.this, MainActivity2.class);
-        startActivity(intent);
+        if((radioButton1.isChecked() || radioButton3.isChecked()) && (radioButton2.isChecked() || radioButton4.isChecked())){
+            Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+
+            if(radioButton1.isChecked()){
+                intent.putExtra("drink", "coffee");
+            }
+            else if (radioButton3.isChecked()){
+                intent.putExtra("drink", "tea");
+            }
+            if(radioButton2.isChecked()){
+                intent.putExtra("food", "sweet");
+            }
+            else if (radioButton4.isChecked()){
+                intent.putExtra("food", "combo");
+            }
+            startActivity(intent);
+        }
     }
     public void ClickImage1(View view) {
-        radioButton1.setChecked(true);
+        if(radioButton1.isChecked()){
+            radioButton1.setChecked(false);
+        }
+        else{
+            radioButton1.setChecked(true);
+            if(radioButton3.isChecked()){
+                radioButton3.setChecked(false);
+            }
+        }
     }
     public void ClickImage2(View view) {
-        radioButton2.setChecked(true);
+        if(radioButton2.isChecked()){
+            radioButton2.setChecked(false);
+        }
+        else{
+            radioButton2.setChecked(true);
+            if(radioButton4.isChecked()){
+                radioButton4.setChecked(false);
+            }
+        }
     }
     public void ClickImage3(View view) {
-        radioButton3.setChecked(true);
+        if(radioButton3.isChecked()){
+            radioButton3.setChecked(false);
+        }
+        else{
+            radioButton3.setChecked(true);
+            if(radioButton1.isChecked()){
+                radioButton1.setChecked(false);
+            }
+        }
     }
     public void ClickImage4(View view) {
-        radioButton4.setChecked(true);
+        if(radioButton4.isChecked()){
+            radioButton4.setChecked(false);
+        }
+        else{
+            radioButton4.setChecked(true);
+            if(radioButton2.isChecked()){
+                radioButton2.setChecked(false);
+            }
+        }
     }
 }

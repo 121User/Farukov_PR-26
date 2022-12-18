@@ -15,7 +15,7 @@
         android:onClick="ClickImage4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/image_6"
+        app:srcCompat="@drawable/image_combo"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <RadioButton
@@ -37,7 +37,7 @@
         android:onClick="ClickImage3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/image_4"
+        app:srcCompat="@drawable/image_tea"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <RadioButton
@@ -71,7 +71,7 @@
         android:onClick="ClickImage2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/image_3"
+        app:srcCompat="@drawable/image_sweets"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <RadioButton
@@ -170,7 +170,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textViewDrink"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="128dp"
@@ -222,7 +222,7 @@
         android:onClick="ClickImage1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/image_5"
+        app:srcCompat="@drawable/image_coffee"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <Button

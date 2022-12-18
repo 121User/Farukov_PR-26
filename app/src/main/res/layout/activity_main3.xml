@@ -4,43 +4,283 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity3">
+    tools:context=".MainActivity3"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-18dp">
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="334dp"
-        android:layout_height="57dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="28dp"
-        android:backgroundTint="#A8CAEA"
-        android:onClick="ClickView"
-        android:text="Показать заказы"
-        android:textColor="#000000"
-        app:cornerRadius="20px"
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#000000"
+        android:foregroundTint="#000000"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/line_2" />
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="334dp"
-        android:layout_height="57dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="104dp"
-        android:backgroundTint="#A8CAEA"
-        android:onClick="ClickBack"
-        android:text="Вернуться"
-        android:textColor="#000000"
-        app:cornerRadius="20px"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#000000"
+        android:foregroundTint="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/line_2" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#000000"
+        android:foregroundTint="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/line_2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="233dp"
+        android:layout_marginTop="25dp"
+        android:text="Кофейня &quot;Бодрость&quot;"
+        android:textColor="#2E2D2D"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textViewOrders"
-        android:layout_width="335dp"
-        android:layout_height="517dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="12dp"
-        android:text=""
+        android:id="@+id/textBreakfast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="132dp"
+        android:text="Корзина"
+        android:textColor="#2E2D2D"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textNamePhone"
+        android:layout_width="116dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="264dp"
+        android:layout_marginTop="76dp"
+        android:text="Иван \n8-913-913-1223"
+        android:textAlignment="textEnd"
+        android:textColor="#2E2D2D"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imagePreviewDrink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="184dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image_coffee" />
+
+    <Button
+        android:id="@+id/buttonFoodPlus"
+        android:layout_width="39dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="352dp"
+        android:layout_marginTop="540dp"
+        android:backgroundTint="#A8CAEA"
+        android:onClick="ClickFoodPlus"
+        android:text="+"
+        android:textColor="#000000"
+        app:cornerRadius="20px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imagePreviewFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="404dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image_sweets" />
+
+    <TextView
+        android:id="@+id/textViewFoodCount"
+        android:layout_width="49dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="292dp"
+        android:layout_marginTop="556dp"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColor="#2E2D2D"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonFoodMinus"
+        android:layout_width="39dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="540dp"
+        android:backgroundTint="#A8CAEA"
+        android:onClick="ClickFoodMinus"
+        android:text="—"
+        android:textColor="#000000"
+        app:cornerRadius="20px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textViewFoodPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="556dp"
+        android:text="230 рублей"
+        android:textColor="#2E2D2D"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="288dp"
+        android:layout_marginTop="600dp"
+        android:text="480 рублей"
+        android:textColor="#2E2D2D"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="600dp"
+        android:text="Итого к оплате:"
+        android:textColor="#2E2D2D"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="256dp"
+        android:layout_marginTop="404dp"
+        android:text="Чизкейк Клубника"
+        android:textColor="#2E2D2D"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewDrinkPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="336dp"
+        android:text="250 рублей"
+        android:textColor="#2E2D2D"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewDrinkCount"
+        android:layout_width="49dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="292dp"
+        android:layout_marginTop="336dp"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColor="#2E2D2D"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonDrinkMinus"
+        android:layout_width="39dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="320dp"
+        android:backgroundTint="#A8CAEA"
+        android:onClick="ClickDrinkMinus"
+        android:text="—"
+        android:textColor="#000000"
+        app:cornerRadius="20px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/buttonDrinkPlus"
+        android:layout_width="39dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="352dp"
+        android:layout_marginTop="320dp"
+        android:backgroundTint="#A8CAEA"
+        android:onClick="ClickDrinkPlus"
+        android:text="+"
+        android:textColor="#000000"
+        app:cornerRadius="20px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textViewDrink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="256dp"
+        android:layout_marginTop="184dp"
+        android:text="Кофе с карамелью"
+        android:textColor="#2E2D2D"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonBuy"
+        android:layout_width="334dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="640dp"
+        android:backgroundTint="#A8CAEA"
+        android:onClick="ClickBuy"
+        android:text="Купить"
+        android:textColor="#000000"
+        app:cornerRadius="20px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
